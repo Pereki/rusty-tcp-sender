@@ -13,10 +13,10 @@ impl TcpReceiver {
 
             let n = stream.read(&mut buf)?; // read incoming bytes
             if n > 0 {
-                println!("{}", String::from_utf8_lossy(&buf[..n]));
+                print!("{}", String::from_utf8_lossy(&buf[..n]));
             }
         }
-
+        println!("--");
         println!("Completed receiving messages.");
 
         Ok(())
