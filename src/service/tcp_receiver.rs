@@ -17,7 +17,7 @@ impl TcpReceiver {
             }
         }
         println!("--");
-        println!("Completed receiving messages.");
+        println!("Completed receiving messages. Closing listener.");
 
         Ok(())
     }
